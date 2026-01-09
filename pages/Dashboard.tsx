@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AnalysisCard from "@/components/AnalysisCard";
@@ -73,7 +75,7 @@ const Dashboard = () => {
               </p>
             </div>
             <Button variant="hero" asChild>
-              <Link to="/analyze">
+              <Link href="/analyze">
                 <Plus className="mr-2 h-5 w-5" />
                 New Analysis
               </Link>

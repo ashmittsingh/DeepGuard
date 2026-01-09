@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HowItWorksStep from "@/components/HowItWorksStep";
@@ -191,7 +191,7 @@ const HowItWorks = () => {
               No account required to get started.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <Link to="/analyze">
+              <Link href="/analyze">
                 Analyze Audio Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

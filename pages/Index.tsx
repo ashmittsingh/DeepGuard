@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import FeatureCard from "@/components/FeatureCard";
 import Navbar from "@/components/layout/Navbar";
@@ -88,13 +88,13 @@ const Index = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/analyze">
+                <Link href="/analyze">
                   Analyze a Call
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button variant="outline" size="xl" asChild>
-                <Link to="/how-it-works">
+                <Link href="/how-it-works">
                   Learn How It Works
                 </Link>
               </Button>
@@ -220,13 +220,13 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="hero" size="xl" asChild>
-                  <Link to="/signup">
+                  <Link href="/signup">
                     Get Started Free
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/analyze">
+                  <Link href="/analyze">
                     Try Without Account
                   </Link>
                 </Button>
